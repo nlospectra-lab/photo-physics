@@ -1,0 +1,371 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Applications of Lasers | Photo-Physics Team</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+    background:#05070c;
+    color:#ffffff;
+    line-height:1.8;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.logo span{
+    color:#ff3b5c;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a:hover{
+    color:#ff3b5c;
+}
+
+.hero{
+
+    height:55vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:10%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.75)
+        ),
+        url("back.png");
+
+    background-size:cover;
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+    text-shadow:0 0 20px rgba(0,0,0,0.9);
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#d8dbe2;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 40px;
+}
+
+.section{
+    margin-bottom:80px;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:70px;
+    height:3px;
+    background:#ff3b5c;
+}
+
+.card{
+    background:#0b1018;
+    border:1px solid #1d2530;
+    border-radius:10px;
+    padding:35px;
+}
+
+.card p{
+    color:#d5dce6;
+}
+
+.keyword-area{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.keyword{
+    border:1px solid #ff3b5c;
+    border-radius:30px;
+    padding:8px 18px;
+}
+
+.highlight{
+    color:#ff3b5c;
+    font-weight:600;
+}
+
+footer{
+    margin-top:80px;
+    padding:50px;
+    text-align:center;
+    border-top:1px solid #1d2530;
+    color:#9ea6b4;
+}
+
+@media(max-width:900px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .container{
+        padding:60px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+<span>●</span> Photo-Physics Team
+</div>
+
+<nav class="menu">
+<a href="index2.html">Home</a>
+<a href="members.html">Members</a>
+<a href="research.html">Research</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Applications of Lasers</h1>
+
+<p>
+Advanced Applications Enabled by Laser Technologies
+</p>
+
+</div>
+
+</section>
+
+<main class="container">
+
+<section class="section">
+
+<h2 class="section-title">
+Overview
+</h2>
+
+<div class="card">
+
+<p>
+
+レーザーは計測や加工だけでなく、
+医療、生体計測、環境分析、エネルギー分野など
+幅広い応用展開を可能にする基盤技術である。
+
+本研究では、
+光源開発や分光技術で培った知見を活用し、
+新しいレーザー応用技術の創出を目指している。
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Research Topics
+</h2>
+
+<div class="card">
+
+<p>
+
+・バイオフォトニクス<br>
+・生体光計測<br>
+・レーザー微細加工<br>
+・光センシング<br>
+・環境モニタリング<br>
+・分光分析技術<br>
+・光学デバイス開発
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Example Applications
+</h2>
+
+<div class="card">
+
+<p>
+
+・生体組織の非侵襲計測<br>
+・皮膚代謝評価<br>
+・バイオフォトン計測<br>
+・微細構造形成<br>
+・表面改質<br>
+・高感度ガス分析<br>
+・光学診断技術
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Research Keywords
+</h2>
+
+<div class="card">
+
+<div class="keyword-area">
+
+<div class="keyword">Biophotonics</div>
+<div class="keyword">Laser Processing</div>
+<div class="keyword">Optical Sensing</div>
+<div class="keyword">Spectroscopy</div>
+<div class="keyword">Medical Photonics</div>
+<div class="keyword">Microfabrication</div>
+<div class="keyword">Environmental Monitoring</div>
+<div class="keyword">Photonics</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Future Perspectives
+</h2>
+
+<div class="card">
+
+<p>
+
+レーザー技術の進展により、
+
+<br><br>
+
+・次世代診断技術<br>
+・再生医療支援技術<br>
+・高機能材料創製<br>
+・環境計測技術<br>
+・スマートセンシング
+
+<br><br>
+
+などへの発展が期待される。
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>Photo-Physics Team</h3>
+
+<p>
+Institute for Integrated Cell-Material Sciences (iCeMS), Kyoto University
+</p>
+
+<br>
+
+<p>
+© 2026 Photo-Physics Team
+</p>
+
+</footer>
+
+</body>
+</html>
+```

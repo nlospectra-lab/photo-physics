@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>History of Light Research | Photo-Physics Team</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+    background:#05070c;
+    color:#ffffff;
+    line-height:1.8;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.logo span{
+    color:#ff3b5c;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a:hover{
+    color:#ff3b5c;
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+
+    height:45vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:10%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.75)
+        ),
+        url("back.png");
+
+    background-size:cover;
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.hero-content h1{
+
+    font-size:4rem;
+
+    margin-bottom:10px;
+
+    text-shadow:
+        0 0 20px rgba(0,0,0,0.9);
+}
+
+.hero-content p{
+
+    font-size:1.2rem;
+
+    color:#d8dbe2;
+
+    text-shadow:
+        0 0 10px rgba(0,0,0,0.9);
+}
+
+/* ==========================
+   Main
+========================== */
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:80px 40px;
+}
+
+.section{
+
+    margin-bottom:80px;
+}
+
+.section-title{
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    position:relative;
+}
+
+.section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+    width:70px;
+    height:3px;
+
+    background:#ff3b5c;
+}
+
+.card{
+
+    background:#0b1018;
+
+    border:1px solid #1d2530;
+
+    border-radius:10px;
+
+    padding:35px;
+}
+
+.card p{
+    color:#d5dce6;
+}
+
+/* ==========================
+   Table
+========================== */
+
+.timeline-table,
+.compare-table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.timeline-table th,
+.timeline-table td,
+.compare-table th,
+.compare-table td{
+
+    border:1px solid #1d2530;
+    padding:15px;
+    vertical-align:top;
+}
+
+.timeline-table th,
+.compare-table th{
+
+    background:#111827;
+    color:#ff3b5c;
+}
+
+.timeline-table tr:nth-child(even),
+.compare-table tr:nth-child(even){
+
+    background:#0f141d;
+}
+
+/* ==========================
+   Image
+========================== */
+
+.image-box{
+
+    text-align:center;
+    margin-top:30px;
+}
+
+.image-box img{
+
+    max-width:100%;
+    border-radius:10px;
+    border:1px solid #1d2530;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-top:1px solid #1d2530;
+
+    color:#9ea6b4;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .container{
+        padding:60px 20px;
+    }
+
+    table{
+        font-size:0.9rem;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+<span>●</span> Photo-Physics Team
+</div>
+
+<nav class="menu">
+<a href="index2.html">Home</a>
+<a href="research.html">Research</a>
+<a href="members.html">Members</a>
+<a href="publications.html">Publications</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>History of Light Research</h1>
+
+<p>
+光の研究の歴史と波動・粒子二重性の発展
+</p>
+
+</div>
+
+</section>
+
+<main class="container">
+
+<section class="section">
+
+<h2 class="section-title">
+Overview
+</h2>
+
+<div class="card">
+
+<p>
+
+光の研究は古代の自然観察から始まり、
+波動説・粒子説の論争を経て、
+現在の量子光学へと発展してきた。
+
+本ページでは光学の発展を概観し、
+光の波動性と粒子性について整理する。
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Electromagnetic Spectrum
+</h2>
+
+<div class="card">
+
+<p>
+電磁波の周波数と物理現象との関係。
+</p>
+
+<div class="image-box">
+
+<img src="electromagnetic-spectrum.png"
+alt="Electromagnetic Spectrum">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Historical Timeline
+</h2>
+
+<div class="card">
+
+<table class="timeline-table">
+
+<tr>
+<th>時代</th>
+<th>主な出来事</th>
+</tr>
+
+<tr>
+<td>紀元前</td>
+<td>
+日常現象の観察<br>
+・光の直進<br>
+・反射<br>
+・屈折
+</td>
+</tr>
+
+<tr>
+<td>17世紀</td>
+<td>
+実験科学の発展<br>
+・ニュートン力学<br>
+・フェルマーの原理<br>
+・ホイヘンスの原理<br>
+・波動説と粒子説の論争
+</td>
+</tr>
+
+<tr>
+<td>19世紀</td>
+<td>
+波動光学の確立<br>
+・フレネル<br>
+・キルヒホッフ<br>
+・マックスウェル電磁理論<br>
+・光速測定
+</td>
+</tr>
+
+<tr>
+<td>20世紀</td>
+<td>
+量子論の発展<br>
+1905年 アインシュタイン（光電効果）<br>
+1923年 コンプトン散乱<br>
+1924年 ド・ブロイ仮説<br>
+→ 光の二重性の確立
+</td>
+</tr>
+
+<tr>
+<td>21世紀</td>
+<td>
+量子光学・ナノフォトニクス・超高速分光
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Wave–Particle Duality
+</h2>
+
+<div class="card">
+
+<table class="compare-table">
+
+<tr>
+<th>現象</th>
+<th>波動性</th>
+<th>粒子性</th>
+</tr>
+
+<tr>
+<td>反射</td>
+<td>○</td>
+<td>△</td>
+</tr>
+
+<tr>
+<td>屈折</td>
+<td>○</td>
+<td>△</td>
+</tr>
+
+<tr>
+<td>干渉</td>
+<td>◎</td>
+<td>×</td>
+</tr>
+
+<tr>
+<td>回折</td>
+<td>◎</td>
+<td>×</td>
+</tr>
+
+<tr>
+<td>偏光</td>
+<td>◎</td>
+<td>×</td>
+</tr>
+
+<tr>
+<td>光電効果</td>
+<td>×</td>
+<td>◎</td>
+</tr>
+
+<tr>
+<td>コンプトン散乱</td>
+<td>×</td>
+<td>◎</td>
+</tr>
+
+<tr>
+<td>単一光子干渉</td>
+<td>◎</td>
+<td>◎</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+From Classical Optics to Quantum Optics
+</h2>
+
+<div class="card">
+
+<p>
+
+17〜19世紀に確立された古典光学は、
+レンズ設計や分光学の基盤となった。
+
+20世紀には量子論によって
+光の粒子性が明らかとなり、
+現在では波動性と粒子性を統一的に扱う
+量子光学へ発展している。
+
+本チームで扱う赤外発光分光や
+非平衡ダイナミクス研究も、
+この流れの上に位置付けられる。
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>Photo-Physics Team</h3>
+
+<p>
+Institute for Integrated Cell-Material Sciences (iCeMS), Kyoto University
+</p>
+
+<br>
+
+<p>
+© 2026 Photo-Physics Team
+</p>
+
+</footer>
+
+</body>
+</html>

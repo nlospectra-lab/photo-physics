@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fluctuation Science | Photo-Physics Team</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+    background:#05070c;
+    color:#ffffff;
+    line-height:1.8;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.logo span{
+    color:#ff3b5c;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#ff3b5c;
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+
+    height:55vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:10%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.75)
+        ),
+        url("back.png");
+
+    background-size:cover;
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+    margin-bottom:15px;
+
+    text-shadow:
+        0 0 20px rgba(0,0,0,0.9);
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    color:#d8dbe2;
+
+    text-shadow:
+        0 0 10px rgba(0,0,0,0.9);
+}
+
+/* ==========================
+   Main
+========================== */
+
+.container{
+
+    max-width:1200px;
+    margin:auto;
+
+    padding:100px 40px;
+}
+
+.section{
+
+    margin-bottom:80px;
+}
+
+.section-title{
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    position:relative;
+}
+
+.section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+    width:70px;
+    height:3px;
+
+    background:#ff3b5c;
+}
+
+.card{
+
+    background:#0b1018;
+
+    border:1px solid #1d2530;
+
+    border-radius:10px;
+
+    padding:35px;
+}
+
+.card p{
+    color:#d5dce6;
+}
+
+.keyword-area{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:10px;
+}
+
+.keyword{
+
+    border:1px solid #ff3b5c;
+
+    border-radius:30px;
+
+    padding:8px 18px;
+
+    color:#ffffff;
+}
+
+.highlight{
+
+    color:#ff3b5c;
+    font-weight:600;
+}
+
+.highlight{
+
+    color:#ff3b5c;
+    font-weight:600;
+}
+
+/* ==========================
+   Scientific Background
+========================== */
+
+.science-layout{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+}
+
+.science-text{
+
+    flex:1;
+}
+
+.science-image{
+
+    flex:0 0 350px;
+
+    text-align:center;
+}
+
+.science-image img{
+
+    width:100%;
+    max-width:350px;
+
+    height:auto;
+
+    display:block;
+    margin:auto;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-top:1px solid #1d2530;
+
+    color:#9ea6b4;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .container{
+        padding:60px 20px;
+    }
+
+    .science-layout{
+        flex-direction:column;
+    }
+
+    .science-image{
+        flex:none;
+    }
+
+    .science-image img{
+        max-width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+<span>●</span> Photo-Physics Team
+</div>
+
+<nav class="menu">
+<a href="index2.html">Home</a>
+<a href="members.html">Members</a>
+<a href="research.html">Research</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fluctuation Science</h1>
+
+<p>
+Infrared Emission Spectroscopy for Quantifying Nonequilibrium Fluctuations
+</p>
+
+</div>
+
+</section>
+
+<main class="container">
+
+<section class="section">
+
+<h2 class="section-title">
+Overview
+</h2>
+
+<div class="card">
+
+<p>
+
+本研究では、<span class="highlight">赤外自然発光</span>を用いて、
+物質内部で生じるエネルギーゆらぎを直接観測し、
+非平衡状態のダイナミクスを定量的に評価することを目的としている。
+
+従来の計測手法では捉えることが難しい
+非平衡状態の挙動を、
+自然放出される赤外光から抽出することで、
+材料機能や相転移との関係を明らかにする。
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Scientific Background
+</h2>
+
+<div class="card science-layout">
+
+<div class="science-text">
+
+<p>
+
+多くの材料機能は熱平衡状態ではなく、
+非平衡状態において発現する。
+
+しかし、従来の解析手法の多くは
+平均化された構造情報に基づいており、
+瞬間的なエネルギー分布やゆらぎの情報を
+直接取得することは困難である。
+
+本研究では赤外発光に着目し、
+分子振動状態やエネルギー分布のゆらぎを
+非接触・リアルタイムに観測する新しい計測法の確立を目指している。
+
+</p>
+
+</div>
+
+<div class="science-image">
+
+<img src="diagram.png" alt="Scientific Background Diagram">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Research Keywords
+</h2>
+
+<div class="card">
+
+<div class="keyword-area">
+
+<div class="keyword">Infrared Spontaneous Emission</div>
+<div class="keyword">Fluctuation Analysis</div>
+<div class="keyword">Nonequilibrium Dynamics</div>
+<div class="keyword">Phase Transition</div>
+<div class="keyword">Photon Statistics</div>
+<div class="keyword">Energy Landscape</div>
+<div class="keyword">Optical Condensed Matter Physics</div>
+<div class="keyword">Operando Spectroscopy</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Experimental Techniques
+</h2>
+
+<div class="card">
+
+<p>
+
+・赤外発光分光<br>
+・時間分解分光<br>
+・超短パルスレーザー励起<br>
+・レーザー誘起非平衡状態生成<br>
+・光物性計測<br>
+・統計解析によるゆらぎ評価
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Applications
+</h2>
+
+<div class="card">
+
+<p>
+
+本研究で得られる知見は、
+
+<br><br>
+
+・相転移ダイナミクスの解明<br>
+・レーザー加工プロセス解析<br>
+・非平衡材料科学<br>
+・エネルギー変換材料評価<br>
+・生体フォトニクス
+
+<br><br>
+
+などへの展開が期待される。
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>Photo-Physics Team</h3>
+
+<p>
+Institute for Integrated Cell-Material Sciences (iCeMS), Kyoto University
+</p>
+
+<br>
+
+<p>
+© 2026 Photo-Physics Team
+</p>
+
+</footer>
+
+</body>
+</html>
