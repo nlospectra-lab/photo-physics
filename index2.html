@@ -278,29 +278,38 @@ header{
 
     display:grid;
 
-    grid-template-columns:
-        repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
 
     gap:25px;
+
+    margin-top:40px;
 }
 
 .facility{
 
     background:#111827;
 
-    height:220px;
+    min-height:220px;
+
+    padding:25px;
 
     display:flex;
-    align-items:center;
-    justify-content:center;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
 
     border:1px solid #222;
+
+    border-radius:12px;
 
     transition:0.3s;
 
     color:#d5d9e1;
 
-    font-size:1.1rem;
+    box-sizing:border-box;
 }
 
 .facility:hover{
@@ -308,6 +317,49 @@ header{
     border-color:#ff3b5c;
 
     transform:translateY(-5px);
+
+    box-shadow:0 8px 20px rgba(255,59,92,0.25);
+}
+
+.facility p{
+
+    margin:0 0 15px 0;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    border-bottom:2px solid #ff3b5c;
+
+    padding-bottom:8px;
+
+    width:100%;
+}
+
+.facility ul,
+.facility ol{
+
+    margin:0;
+
+    padding-left:22px;
+
+    color:#d5d9e1;
+
+    font-size:1rem;
+
+    line-height:1.8;
+}
+
+.facility li{
+
+    margin-bottom:6px;
+}
+
+.facility li:last-child{
+
+    margin-bottom:0;
 }
 
 /* ==========================
@@ -416,14 +468,10 @@ Research Topics
 Latest News
 </h2>
 
-<div class="news-item">
-<span class="news-date">2026.06.01</span>
-Webサイトを公開しました
-</div>
 
 <div class="news-item">
 <span class="news-date">2026.05.20</span>
-Journal of Luminescence に論文掲載
+Journal of Luminescence に論文掲載 (Publicationsをご覧ください。)
 </div>
 
 <div class="news-item">
@@ -442,16 +490,30 @@ Facilities
 <div class="facility-grid">
 
 <div class="facility">
-超短パルスレーザー
+    <p>超短パルスレーザー</p>
+    <ul>
+        <li>Mode-locked Ti:Sapphire Laser</li>
+        <li>Mode-locked Yb Fiber Laser</li>
+    </ul>
 </div>
 
 <div class="facility">
-FT-IR分光器
+    <p>FT-IR分光器</p>
+    <ul>
+        <li>JASCO FT/IR-4100</li>
+        <li>Bruker Tensor 27</li>
+    </ul>
 </div>
 
 <div class="facility">
-APD検出系
+    <p>検出系</p>
+    <ul>
+        <li>HighFinesse WS7 Wavelength Meter</li>
+        <li>USB Mini Spectrometer</li>
+        <li>etc.</li>
+    </ul>
 </div>
+
 
 </div>
 

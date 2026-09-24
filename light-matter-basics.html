@@ -445,6 +445,702 @@ Connection to Our Research
 
 </main>
 
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Light-Matter Interaction Basics | Photo-Physics Team</title>
+
+<style>
+
+/* =========================
+   Reset
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================
+   Base
+========================= */
+
+html{
+    background:#05070c;
+}
+
+body{
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+    background:#05070c;
+    color:#ffffff;
+    line-height:1.8;
+}
+
+
+/* 文字色を明示 */
+
+h1,
+h2,
+h3,
+p,
+li,
+td,
+th{
+    color:inherit;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+    color:#ffffff;
+}
+
+.logo span{
+    color:#ff3b5c;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    color:#ffffff;
+    transition:color 0.3s ease;
+}
+
+.menu a:hover{
+    color:#ff3b5c;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero{
+
+    height:45vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:10%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.75)
+        ),
+        url("back.png");
+
+    background-size:cover;
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.hero-content h1{
+
+    font-size:4rem;
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+    text-shadow:0 0 20px rgba(0,0,0,0.9);
+}
+
+.hero-content p{
+
+    font-size:1.2rem;
+
+    color:#d8dbe2;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:80px 40px;
+}
+
+.section{
+
+    margin-bottom:80px;
+}
+
+.section-title{
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    position:relative;
+
+    color:#ffffff;
+}
+
+.section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+    width:70px;
+    height:3px;
+
+    background:#ff3b5c;
+}
+
+
+/* =========================
+   Card
+========================= */
+
+.card{
+
+    background:#0b1018;
+
+    border:1px solid #1d2530;
+
+    border-radius:10px;
+
+    padding:35px;
+
+    color:#ffffff;
+}
+
+.card p{
+
+    color:#d5dce6;
+
+    margin-bottom:20px;
+}
+
+
+/* リスト */
+
+.card ul{
+
+    margin-top:20px;
+    margin-left:25px;
+
+    color:#d5dce6;
+}
+
+.card li{
+
+    color:#d5dce6;
+
+    margin-bottom:5px;
+}
+
+
+/* =========================
+   Figure
+========================= */
+
+.figure{
+
+    text-align:center;
+
+    margin-top:30px;
+}
+
+.figure img{
+
+    max-width:100%;
+
+    border-radius:10px;
+
+    border:1px solid #1d2530;
+}
+
+.figure-caption{
+
+    margin-top:10px;
+
+    color:#9ea6b4;
+
+    font-size:0.9rem;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    color:#ffffff;
+}
+
+.table th,
+.table td{
+
+    border:1px solid #1d2530;
+
+    padding:15px;
+
+    color:#d5dce6;
+}
+
+.table th{
+
+    background:#111827;
+
+    color:#ff3b5c;
+
+    font-weight:600;
+}
+
+.table td{
+
+    background:#0b1018;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+
+    margin-top:80px;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-top:1px solid #1d2530;
+
+    color:#9ea6b4;
+}
+
+footer h3{
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+}
+
+footer p{
+
+    color:#9ea6b4;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:900px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero{
+
+        height:45vh;
+
+        padding-left:7%;
+        padding-right:7%;
+    }
+
+    .hero-content h1{
+
+        font-size:2.8rem;
+    }
+
+    .container{
+
+        padding:60px 20px;
+    }
+
+    .card{
+
+        padding:25px;
+    }
+
+    .table{
+
+        font-size:0.9rem;
+    }
+
+    .table th,
+    .table td{
+
+        padding:10px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     Header
+========================= -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+<span>●</span> Photo-Physics Team
+</div>
+
+<nav class="menu">
+
+<a href="index2.html">Home</a>
+<a href="research.html">Research</a>
+<a href="members.html">Members</a>
+<a href="publications.html">Publications</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     Hero
+========================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Light-Matter Interaction Basics</h1>
+
+<p>
+光と物質の相互作用の基礎
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     Main
+========================= -->
+
+<main class="container">
+
+
+<!-- =========================
+     What is Light?
+========================= -->
+
+<section class="section">
+
+<h2 class="section-title">
+What is Light?
+</h2>
+
+<div class="card">
+
+<p>
+
+光は電磁波の一種であり、
+波としての性質と粒子（光子）としての性質を併せ持つ。
+
+可視光は人間が認識できる電磁波の一部に過ぎず、
+紫外線・赤外線・X線・マイクロ波なども
+同じ電磁波に含まれる。
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     Light-Matter Interaction
+========================= -->
+
+<section class="section">
+
+<h2 class="section-title">
+Light-Matter Interaction
+</h2>
+
+<div class="card">
+
+<p>
+
+光が物質に入射すると、
+光は物質中の電子や格子振動、分子振動などと相互作用する。
+
+その結果、
+
+</p>
+
+
+<ul>
+
+<li>吸収 (Absorption)</li>
+<li>発光 (Emission)</li>
+<li>散乱 (Scattering)</li>
+
+</ul>
+
+
+<p>
+
+また、物質の電磁応答や境界条件により、
+反射や屈折も起こる。
+
+</p>
+
+
+<div class="figure">
+
+<img
+    src="light-matter-diagram.png"
+    alt="Light Matter Interaction"
+>
+
+<div class="figure-caption">
+Light-Matter Interaction Diagram
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     Major Phenomena
+========================= -->
+
+<section class="section">
+
+<h2 class="section-title">
+Major Phenomena
+</h2>
+
+<div class="card">
+
+<table class="table">
+
+<tr>
+
+<th>現象</th>
+
+<th>説明</th>
+
+</tr>
+
+
+<tr>
+
+<td>吸収</td>
+
+<td>
+光エネルギーが物質に取り込まれ、
+電子励起や振動、熱などに変換される
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>発光</td>
+
+<td>
+励起された物質がエネルギーを光として放出する
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>散乱</td>
+
+<td>
+光が物質との相互作用によって
+さまざまな方向に広がる
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>反射</td>
+
+<td>
+光が境界面で入射側の媒質へ戻る
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>屈折</td>
+
+<td>
+光が媒質の境界で進行方向を変えて進む
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     Why is it Important?
+========================= -->
+
+<section class="section">
+
+<h2 class="section-title">
+Why is it Important?
+</h2>
+
+<div class="card">
+
+<p>
+
+光と物質の相互作用は、
+
+</p>
+
+
+<ul>
+
+<li>分光分析</li>
+<li>レーザー加工</li>
+<li>半導体デバイス</li>
+<li>太陽電池</li>
+<li>量子技術</li>
+<li>生体イメージング</li>
+
+</ul>
+
+
+<p>
+
+など、幅広い分野を支える基盤である。
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     Connection to Our Research
+========================= -->
+
+<section class="section">
+
+<h2 class="section-title">
+Connection to Our Research
+</h2>
+
+<div class="card">
+
+<p>
+
+本研究室では、
+赤外発光分光や非線形光学を利用し、
+
+物質内部のエネルギー移動、
+非平衡状態、
+相転移ダイナミクスを研究している。
+
+これらは全て光と物質の相互作用を基盤としている。
+
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     Footer
+========================= -->
+
 <footer>
 
 <h3>Photo-Physics Team</h3>
@@ -461,5 +1157,7 @@ Institute for Integrated Cell-Material Sciences (iCeMS), Kyoto University
 
 </footer>
 
+
 </body>
+
 </html>
