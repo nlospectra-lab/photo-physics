@@ -397,13 +397,26 @@ footer{
         grid-template-columns:1fr;
     }
 
+    /* スマートフォンでもメニューを表示 */
     .menu{
-        display:none;
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+    }
+
+    .nav{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:1.2rem;
     }
 
     .hero{
         background-position:center;
     }
+
 }
 
 </style>

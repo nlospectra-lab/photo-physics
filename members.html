@@ -181,7 +181,18 @@ footer{
 @media(max-width:900px){
 
     .menu{
-        display:none;
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+    }
+
+    .nav{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:1.2rem;
     }
 
     .hero-content h1{
@@ -195,6 +206,7 @@ footer{
     .member-grid{
         grid-template-columns:1fr;
     }
+
 }
 
 </style>
