@@ -1,17 +1,491 @@
-<section class="section">
+
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Photo-Physics Team</title>
+
+<style>
+
+/* ==========================
+   Base
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+    background:#05070c;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.logo span{
+    color:#ff3b5c;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#ff3b5c;
+}
+
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+    height:45vh;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:10%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.30),
+            rgba(0,0,0,0.75)
+        ),
+        url("back.png");
+
+    background-size:cover;
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:10px;
+
+    text-shadow:0 0 20px rgba(0,0,0,0.9);
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    color:#d8dbe2;
+
+    text-shadow:0 0 10px rgba(0,0,0,0.9);
+}
+
+
+/* ==========================
+   Main
+========================== */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+
+    padding:80px 40px;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:40px;
+
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:-10px;
+
+    width:70px;
+    height:3px;
+
+    background:#ff3b5c;
+}
+
+
+/* ==========================
+   Contact Grid
+========================== */
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+}
+
+
+/* ==========================
+   Contact Card
+========================== */
+
+.contact-card{
+    background:#0b1018;
+
+    border:1px solid #1d2530;
+    border-radius:10px;
+
+    padding:30px;
+
+    transition:.3s;
+}
+
+.contact-card:hover{
+    border-color:#ff3b5c;
+    transform:translateY(-5px);
+}
+
+
+/* ==========================
+   Contact Title
+========================== */
+
+.contact-title{
+    font-size:1.6rem;
+    color:#ff3b5c;
+
+    margin-bottom:25px;
+}
+
+
+/* ==========================
+   Contact Information
+========================== */
+
+.contact-info{
+    color:#d7dce5;
+}
+
+.contact-info p{
+    margin-bottom:20px;
+}
+
+.contact-info strong{
+    color:#ffffff;
+    font-weight:600;
+}
+
+
+/* ==========================
+   Links
+========================== */
+
+.contact-info a{
+    color:#7fb7ff;
+    transition:.3s;
+}
+
+.contact-info a:hover{
+    color:#ff3b5c;
+}
+
+
+/* ==========================
+   Map Link
+========================== */
+
+.map-link{
+    display:inline-block;
+
+    margin-top:5px;
+
+    padding:10px 16px;
+
+    border:1px solid #1d2530;
+    border-radius:6px;
+
+    transition:.3s;
+}
+
+.map-link:hover{
+    border-color:#ff3b5c;
+    color:#ff3b5c;
+}
+
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    margin-top:80px;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-top:1px solid #1d2530;
+
+    color:#9ea6b4;
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .container{
+        padding:60px 20px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+     Header
+========================== -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+<span>●</span> Photo-Physics Team
+</div>
+
+<nav class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="members.html">Members</a>
+
+<a href="research.html">Research</a>
+
+<!--
+<a href="publications.html">Publications</a>
+-->
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- ==========================
+     Hero
+========================== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Contact</h1>
+
+<p>
+Access and contact information
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ==========================
+     Main
+========================== -->
+
+<main class="container">
+
+
+<!-- ==========================
+     Access
+========================== -->
 
 <h2 class="section-title">
-Contact
+Access
 </h2>
 
-<p style="font-size:1.2rem;">
 
-E-mail :
+<div class="contact-grid">
 
-<a href="mailto:photophysics999@gmail.com"
-style="color:#7fb7ff;">
-[photophysics999@gmail.com](mailto:photophysics999@gmail.com) </a>
+
+<div class="contact-card">
+
+<div class="contact-title">
+Location
+</div>
+
+<div class="contact-info">
+
+<p>
+<strong>
+Photo-Physics Team
+</strong>
+</p>
+
+<p>
+京都大学 高等研究院<br>
+物質－細胞統合システム拠点（iCeMS）
+</p>
+
+<p>
+<strong>
+Building
+</strong><br>
+
+iCeMS研究棟（31）
 
 </p>
 
-</section>
+<p>
+
+<a
+href="https://www.kyoto-u.ac.jp/ja/access/campus/yoshida/map6r-y"
+target="_blank"
+rel="noopener noreferrer"
+class="map-link">
+
+Campus Map ↗
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ==========================
+     E-mail
+========================== -->
+
+<div class="contact-card">
+
+<div class="contact-title">
+E-mail
+</div>
+
+<div class="contact-info">
+
+<p>
+For inquiries regarding research,
+collaboration, or other matters,
+please contact us by e-mail.
+</p>
+
+<p>
+
+<a
+href="mailto:photophysics999@gmail.com">
+
+photophysics999@gmail.com
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+</main>
+
+
+
+<!-- ==========================
+     Footer
+========================== -->
+
+<footer>
+
+<h3>Photo-Physics Team</h3>
+
+<p>
+Institute for Integrated Cell-Material Sciences (iCeMS), Kyoto University
+</p>
+
+<br>
+
+<p>
+© 2026 Photo-Physics Team
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
