@@ -246,24 +246,63 @@ footer{
    Responsive
 ========================== */
 
+
+/* ==========================
+   Responsive
+========================== */
+
 @media(max-width:900px){
 
+    /* Navigation */
     .menu{
-        display:none;
+        display:flex;
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
     }
 
+    .nav{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:1.2rem;
+    }
+
+    /* Hero */
     .hero-content h1{
         font-size:2.8rem;
     }
 
+    /* Main */
     .container{
         padding:60px 20px;
     }
 
-    table{
-        font-size:0.9rem;
-    }
+    /* Table */
+/* Table */
+
+table{
+    font-size:0.9rem;
+    width:100%;
 }
+
+.timeline-table,
+.compare-table{
+    display:block;
+    overflow-x:auto;
+    white-space:normal;
+}
+
+.timeline-table th,
+.timeline-table td,
+.compare-table th,
+.compare-table td{
+    min-width:100px;
+}
+
+}
+
 
 </style>
 
